@@ -1,0 +1,35 @@
+// 文章内容样式
+.main-column {
+    .image-wrapper {
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        // height: 0;
+        position: relative;
+        img {
+            margin-top: 10px;
+            height: 300px;
+            width: 100%;
+        }
+    }
+    .cardContent {
+        padding: 30px;
+        .post-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin: 8px 0;
+            color: #475b6d;
+            line-height: 1.125;
+        }
+        .post-show-meta {
+            padding: 0 2px;
+            font-size: 16px;
+            color: #909faf;
+            time {
+                .post-meta-link {
+                    color: #909faf;
+                }
+            }
+        }
+    }
+}

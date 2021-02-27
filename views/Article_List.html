@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="/dist/css/ArticleDetails.min.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap样式 -->
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">
+    <!-- iconfont字体库 -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2134075_y6zc20tvsv.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="../dist/css/CommonStyle.min.css">
+    <!-- 文章列表样式 -->
+    <link rel="stylesheet" href="/dist/css/Article_List.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 顶部导航栏 -->
+        {{include './common/headNavbar.html'}}
+        <!-- 中间主体 -->
+        <div class="section_wrap" style="display: flex;justify-content: center;padding: 24px 16px;">
+            <div class="container">
+                <div class="row">
+                    <!-- 左边栏 -->
+                    {{include './common/sidebar_left.html'}}
+                    <!-- 中间主体 -->
+                    <div class="col-xs-12 col-md-8 col-lg-7" style="background-color: #fff;border-radius: 5px; overflow: hidden; box-shadow: 0 0 5px #ccc;">
+                        <!--  -->
+                        <div class="publish" id="btmArticle">
+                            <!-- 文章内容 -->
+                        </div>
+                        <!--  -->
+                        <div class="loadMore" id="loadMore">
+                            加载更多
+                        </div>
+                    </div>
+                    <!-- 右边栏 -->
+                    {{include './common/sidebar_right.html'}}
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        {{include './common/footer.html'}}
+</body>
+<script src="/dist/js/Article_List.js"></script>
+
+</html>

@@ -1,0 +1,97 @@
+// 左边栏
+.left-column {
+    border-radius: 5px;
+    padding: 24px 0;
+    box-shadow: 0 0 5px #ccc;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #3c4858;
+    img {
+        width: 88px;
+        height: 88px;
+    }
+    p {
+        margin: 0;
+    }
+    .author-name {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    .author-description {
+        font-size: 18px;
+    }
+    .author-message {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        a {
+            padding: 0 16px;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .author-card-society {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        .author-card-society-icon {
+            padding: 0 10px;
+            a:hover {
+                color: #5e17eb;
+            }
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.left_clas {
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 24px;
+    box-shadow: 0 0 5px #ccc;
+    background-color: #fff;
+    color: #3c4858;
+    .categories-card {
+        width: 100%;
+        .categories-header {
+            margin-bottom: 6px;
+            font-size: 16px;
+        }
+    }
+    .categories-list {
+        .categories-list-item {
+            padding: 6px 8px;
+            font-size: 20px;
+            border-radius: 5px;
+            .categories-list-item-badge {
+                float: right;
+                margin-right: 10px;
+                font-size: 16px;
+                background-color: #edeff3;
+                padding: 3px 7px;
+                text-align: center;
+                border-radius: 5px;
+            }
+            &:hover {
+                background-color: #f2f5f8;
+                transition: all .4s;
+                .categories-list-item-badge {
+                    background-color: #adb7d0;
+                    transition: all .4s;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

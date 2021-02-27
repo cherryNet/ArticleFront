@@ -1,0 +1,24 @@
+// 底部
+.footer {
+    background-color: #fff;
+    font-size: 14px;
+    transition: background-color .3s;
+    width: 100%;
+    box-shadow: var(--around-shadow-style);
+    padding: 24px 16px;
+    bottom: 0;
+    .footer-container {
+        // background-color: yellowgreen;
+        display: flex;
+        color: #909faf;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .footer-dsc {
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
