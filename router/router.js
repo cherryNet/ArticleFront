@@ -27,5 +27,10 @@ router.get('/Article_List', (req, res) => {
     res.render('Article_List.html')
 })
 
+// 搜索页面
+router.get('/searchMod', (req, res) => {
+    res.render('searchMod.html');
+})
+
 // 暴露路由器
 module.exports = router;

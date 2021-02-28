@@ -1,0 +1,54 @@
+// 搜索
+.search {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 0 #ccc;
+    .searchFrame {
+        height: 33px;
+        width: 70%;
+        border-radius: 5px;
+        border: 2px solid #ccc;
+        padding-left: 10px;
+    }
+}
+
+.publish {
+    padding: 10px 8px;
+    .articleLine {
+        border-bottom: 1px solid #ccc;
+        .post-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .text-muted {
+            margin-top: 8px;
+        }
+    }
+    .pic {
+        margin: 10px 0;
+        height: 100px;
+        img {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// 加载更多
+.loadMore {
+    display: flex;
+    margin: 15px 0 5px 0;
+    width: 100%;
+    height: 30px;
+    box-shadow: 0 0 2px #909faf;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #3c4858;
+}
