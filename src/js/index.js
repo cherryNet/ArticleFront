@@ -23,7 +23,7 @@
         });
 
         $.get(`http://127.0.0.1:5000/api/article?_page=${_page}&_limit=${_limit}`).then(res => {
-
+        
             // 关闭loading
             layer.close(index);
 
@@ -50,7 +50,7 @@
                             <div class="hidden-xs contentPreview">
                                 ${res[i].content}
                             </div>
-                            <p class="text-muted"><a href="javascript:;">${res[i].name} · </a> 阅读(<span>2417</span>) 评论(<span>23</span>) 赞(<span>13</span>)</p>
+                            <p class="text-muted"><a href="http://127.0.0.1:8000/AllCate?cat_id=${res[i].cat_id}">${res[i].name} · </a> 阅读(<span>2417</span>) 评论(<span>23</span>) 赞(<span>13</span>)</p>
                         </div>
                         <div class="col-sm-3 hidden-xs pic">
                             <img src="${res[i].cover}" alt="">

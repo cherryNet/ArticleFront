@@ -13,7 +13,7 @@ window.onload = function() {
 
     let { art_id } = searchParam(url)
     $.get(`http://127.0.0.1:5000/api/articleInfo/${art_id}`).then(res => {
-        let { author, cat_name, content, cover, publish_date, title } = res;
+        let { author, cat_name, content, cover, publish_date, title , cat_id } = res;
         if (cover) {
             cover = `http://127.0.0.1:5000/${cover}`;
         } else {
@@ -31,7 +31,7 @@ window.onload = function() {
             <b>作者：${author} · </b>
                 <i class="iconfont icon-rili" style="margin-right:2px"></i>
                 <span>${publish_date}</span> ·
-                <a href="javascript:;" class="post-meta-link">${cat_name}</a>
+                <a href="http://127.0.0.1:8000/AllCate?cat_id=${cat_id}" class="post-meta-link">${cat_name}</a>
                 <hr>
             </time>
         </div>

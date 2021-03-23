@@ -30,7 +30,7 @@ function loadArticle() {
                     <div class="hidden-xs contentPreview">
                         ${v.content}
                     </div>
-                    <p class="text-muted"><a href="javascript:;">${v.name} · </a> 阅读(<span>2417</span>) 评论(<span>23</span>) 赞(<span>13</span>)</p>
+                    <p class="text-muted"><a href="http://127.0.0.1:8000/AllCate?cat_id=${v.cat_id}">${v.name} · </a> 阅读(<span>2417</span>) 评论(<span>23</span>) 赞(<span>13</span>)</p>
                 </div>
                 <div class="col-sm-3 hidden-xs pic">
                     <img src="${v.cover}" alt="">

@@ -4,6 +4,7 @@ let _limit = 5;
 function searchArticle(value) {
 
     $.get(`http://127.0.0.1:5000/api/fuzzyMatching?value=${value}`).then(res => {
+        console.log(res);
         if (!res.length) {
             return;
         }
@@ -16,7 +17,7 @@ function searchArticle(value) {
                     <div class="col-sm-9">
                         <h3 class="post-title">${v.title}</h3>
                         <p class="text-muted"><span>${v.author}</span>&nbsp;发布于&nbsp;<span>${v.publish_date}</span></p>
-                        <p class="text-muted">分类 ：<a href="javascript:;">${v.name}</a></p>
+                        <p class="text-muted">分类 ：<a href="http://127.0.0.1:8000/AllCate?cat_id=${v.cat_id}">${v.name}</a></p>
                     </div>
                     <div class="col-sm-3 hidden-xs pic">
                         <img src="${v.cover}" alt="">
